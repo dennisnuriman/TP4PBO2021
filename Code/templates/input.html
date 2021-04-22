@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <link rel="stylesheet" href="../frontend/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../frontend/bootstrap/main.css">
+</head>
+<body>
+
+    <div class="container">
+            <nav class="row navbar bg-dark fixed-top text-light">
+                <a href="../index.html" class="navbar-brand h1 mx-auto link mb-0">Input Data</a>
+            </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <header class="input-main">
+                    <fieldset>
+                        <legend><h3><b>ISI FORM DENGAN DATA YANG VALID</b></h1></legend>
+                        <form action="../1index.php" method="POST">
+                            <div class="form-group">
+                                <label for="tnama">Nama Lengkap</label>
+                                <input type="text" class="form-control" name="tnama" placeholder="Masukkan Nama" required>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="tnim">NIM</label>
+                                <input type="text" class="form-control" name="tnim" placeholder="Masukkan NIM" required>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="ttanggalLahir">Tanggal Lahir</label>
+                                <input type="text" class="form-control" name="ttanggalLahir" placeholder="tanggal/bulan/tahun" required>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="tjenisKelamin">Jenis Kelamin</label>
+                                <div class="form-check" required>
+                                    <input class="form-check-input" type="radio" name="tjenisKelamin" id="exampleRadios1" value="Laki-laki" required>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Laki-laki
+                                    </label>
+                                </div>
+            
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="tjenisKelamin" id="exampleRadios2" value="Perempuan" required>
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        Perempuan
+                                    </label>
+                                </div>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="temail">Email</label>
+                                <input type="email" class="form-control" name="temail" placeholder="Masukkan Email" required>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="ttelephone">Telephone</label>
+                                <input type="text" class="form-control" name="ttelephone" placeholder="Masukkan No Telephonee" required>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="tpersonalSite">Personal Site</label>
+                                <input type="text" class="form-control" name="tpersonalSite" placeholder="Masukkan Nama Web" required>
+                            </div>
+            
+                            <button type="submit" class="btn btn-primary" name="add">Submit</button>
+                            <button type="reset" class="btn btn-secondary blur">Reset</button>
+                            <br>
+                            <br>
+                            <br>
+                            
+                        </form>
+                    </fieldset>
+                </header>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
